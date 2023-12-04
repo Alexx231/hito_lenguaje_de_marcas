@@ -1,0 +1,109 @@
+
+<!-- Contacta.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="Alejandro Pawlukiewicz">
+    <meta name="description" content="Contacto con Alejandro Pawlukiewicz">
+    <meta name="llaves" content="HTML,CSS,JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Contacto</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="inicio.html">Inicio</a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Presentacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacta.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+                <h4><i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
+            </div>
+            <div class="mb-1">
+                <form id="contacto">
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"><i class="bi bi-person-fill"></i> Nombre/Empresa</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" pattern="[A-Za-z\s]{3,}" title="Debe contener al menos 3 caracteres y solo letras" required>
+                            <div class="nombre text-danger"></div>
+                        </div>
+                        <div>
+                            <label for="sector"><i class="bi bi-building"></i> Sector/Profesión</label>
+                            <input type="text" class="form-control" name="sector" id="sector" pattern="[A-Za-z\s]{3,}" title="Debe contener al menos 3 caracteres y solo letras" required>
+                            <div class="sector text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="pais"><i class="bi bi-globe"></i> País</label>
+                        <select class="form-select" name="pais" id="pais" required>
+                            <option value="">Seleccione un país</option>
+                            <option value="España">España</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Inglaterra">Inglaterra</option>
+                            <option value="Alemania">Alemania</option>
+                        </select>
+                        <div class="pais text-danger"></div>
+                    </div> 
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo electrónico</label>
+                        <input type="email" class="form-control" name="correo" id="correo" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Debe ser un correo electrónico válido" required>
+                        <div class="correo text-danger"></div>
+                    </div> 
+                    <div class="mb-4">
+                        <label for="telefono"><i class="bi bi-telephone-fill"></i> Teléfono</label>
+                        <input type="tel" class="form-control" name="telefono" id="telefono" pattern="[0-9]{8,12}" title="Debe contener solo dígitos, no más de 12 dígitos y no menos de 8 dígitos" required>
+                        <div class="telefono text-danger"></div>
+                    </div> 
+                    <div class="mb-4">
+                        <label for="mensaje"><i class="bi bi-chat-right-dots-fill"></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" minlength="5" title="Debe contener al menos 5 palabras" required></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="mb-2">
+                        <button id="botton" class="col-12 btn btn-primary d-flex justify-content-between">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/contacta.js"></script>
+</body>
+</html>
+
