@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-content {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #45484b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #aaa;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding-left: 40px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-left: 25px;
+}
+
+.btn-field {
+    text-align: center;
+}
+
+.btn-field button {
+    padding: 10px 20px;
+    background-color: #04BD7D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-field button:hover {
+    background-color: #03A56F;
+}
+
+@media (max-width: 768px) {
+    .form-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .btn-field button {
+        width: 100%;
+    }
+}
