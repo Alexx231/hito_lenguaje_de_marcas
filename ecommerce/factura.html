@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factura</title>
+    <link rel="stylesheet" type="text/css" href="/css/factura.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Factura</h1>
+    <p id="nombreCliente"></p>
+    <p id="direccionCliente"></p>
+    <p>Número de pedido: <span id="numeroPedido"></span></p>
+    <p>Fecha de compra: <span id="fechaCompra"></span></p>
+    <p>Fecha de entrega: <span id="fechaEntrega"></span></p>
+    <table id="productos">
+        <tr>
+            <th>Nombre del producto</th>
+            <th>Referencia</th>
+            <th>Precio</th>
+            <th>Unidades</th>
+        </tr>
+    </table>
+    <p>Total de la factura: <span id="totalFactura"></span></p>
+    <button onclick="window.location.href='index.html'">Volver al Inicio</button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/validar.js"></script>
+    <script src="/js/factura.js"></script>
+</body>
+</html>

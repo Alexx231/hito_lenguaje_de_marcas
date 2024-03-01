@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+h1 {
+    animation: colorChange 2s infinite, gradientBackground 10s ease-in-out infinite;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    background-size: 200% 200%;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+
+@keyframes colorChange {
+    0% { color: #1abc9c; }
+    25% { color: #3498db; }
+    50% { color: #9b59b6; }
+    75% { color: #e74c3c; }
+    100% { color: #1abc9c; }
+}
+
+@keyframes gradientBackground {
+    0% { background: #ee7752; background-position: 0% 50%; }
+    25% { background: #e73c7e; background-position: 50% 50%; }
+    50% { background: #9b59b6; background-position: 100% 50%; }
+    75% { background: #e74c3c; background-position: 50% 50%; }
+    100% { background: #23a6d5; background-position: 0% 50%; }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #34495e;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 3px 0px #2c3e50, 0px 14px 10px rgba(0,0,0,0.15), 0px 24px 2px rgba(0,0,0,0.1), 0px 34px 30px rgba(0,0,0,0.1);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table td, table th {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #34495e;
+    color: white;
+}
+
+table tr.fila-cliente:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr.fila-cliente:hover {
+    background-color: #ddd;
+}
+
+table {
+    border: 8px solid;
+    border-image-source: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    border-image-slice: 1;
+}
+
+.fila-cliente {
+    transition: all 0.3s ease;
+    font-size: 0.9em;
+}
+
+.fila-cliente:hover {
+    background-color: #f1c40f;
+    color: white;
+    transform: scale(1.01);
+}
+
+.fila-cliente td {
+    padding: 15px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, black, transparent);
+    border-image-slice: 1;
+}
+
+.fila-cliente:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+#btnFactura {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 150ms ease;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite, pulse 2s infinite;
+    width: 100%;
+}
+
+#btnFactura:hover, #btnFactura:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+#btnFactura:active {
+    transform: scale(0.99);
+}
+
+#btnFactura::before {
+    content: "🚀";
+    margin-right: 0.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.90); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.90); }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #btnFactura {
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "cliente": {
+        "nombre": "Carlos",
+        "apellidos": "Gómez",
+        "telefono": "111111119",
+        "direccion": {
+            "calle": "Carrera Feliz 112",
+            "ciudad": "Barcelona",
+            "codigoPostal": "08084",
+            "provincia": "Barcelona"
+        },
+        "correoElectronico": "carlos.gomez@example.com",
+        "fechaInclusion": "2022-11-01"
+    },
+    "factura": {
+        "numeroPedido": "037",
+        "fechaCompra": "2022-11-05",
+        "fechaEntrega": "2022-11-12",
+        "totalFactura": 32.70,
+        "productos": [
+            {
+                "nombreProducto": "Libro 'La Odisea'",
+                "referencia": "BK009",
+                "precio": 7.40,
+                "unidades": 2
+            },
+            {
+                "nombreProducto": "Libro 'Crimen y castigo'",
+                "referencia": "BK010",
+                "precio": 14.90,
+                "unidades": 1
+            }
+        ]
+    }
+}
